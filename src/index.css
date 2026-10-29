@@ -72,6 +72,15 @@
   --shadow-3: 0 18px 48px rgb(12 31 51 / .18);
 }
 
+/* Applies only on desktop (lg+) when an ancestor has data-collapsed="true" */
+@custom-variant rail {
+  @media (width >= 64rem) {
+    &:where([data-collapsed="true"] *) {
+      @slot;
+    }
+  }
+}
+
 @layer base {
   html { scroll-padding-top: 120px; -webkit-text-size-adjust: 100%; }
   body {
