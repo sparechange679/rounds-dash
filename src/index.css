@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+@theme {
+  /* Start from a clean palette: no default Tailwind colours */
+  --color-*: initial;
+  --color-white: #fff;
+  --color-black: #000;
+  --color-transparent: transparent;
+  --color-current: currentColor;
+
+  /* Brand */
+  --color-navy: #0b2a4a;
+  --color-navy-700: #123a63;
+  --color-navy-card: #0e2f52;
+  --color-mint: #5ee0c1;
+  --color-teal: #08705f;        /* teal text on light surfaces */
+  --color-teal-500: #14a88f;    /* teal fills and lines */
+  --color-teal-line: #86d4c5;
+  --color-coral: #e5533d;
+  --color-coral-ink: #b3361f;
+  --color-coral-line: #f2b9ae;
+  --color-amber: #eea935;
+  --color-amber-ink: #855400;
+  --color-amber-line: #e8c47c;
+  --color-sky: #2f74c0;
+  --color-sky-ink: #1d5796;
+
+  /* Surfaces */
+  --color-bg: #f1f4f8;
+  --color-surface: #ffffff;
+  --color-surface-2: #f7f9fb;
+  --color-surface-3: #edf1f6;
+  --color-line: #dde4ec;
+  --color-line-2: #c5d0dc;
+
+  /* Text */
+  --color-ink: #0c1f33;
+  --color-text: #2a3d52;
+  --color-muted: #56687b;
+  --color-muted-2: #8a9aac;
+
+  /* Tints */
+  --color-tint-navy: #e6edf6;
+  --color-tint-navy-2: #d8e3f0;
+  --color-tint-teal: #e0f4ef;
+  --color-tint-teal-2: #bfe8dd;
+  --color-tint-coral: #fdece8;
+  --color-tint-amber: #fdf3de;
+  --color-tint-sky: #e7f0fb;
+  --color-tint-sky-2: #f3f8fd;
+
+  /* Roles */
+  --color-primary: #0b2a4a;
+  --color-primary-hover: #123a63;
+  --color-on-primary: #ffffff;
+  --color-chart-1: #0b2a4a;
+  --color-chart-2: #14a88f;
+  --color-link: #1d5796;
+  --color-focus: #2f74c0;
+  --color-census: #e8eef5;
+  --color-sidebar: #0b2a4a;
+
+  /* Fonts */
+  --font-sans: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+
+  /* Radius and shadows */
+  --radius-DEFAULT: 6px;
+  --radius-lg: 8px;
+  --shadow-1: 0 1px 2px rgb(12 31 51 / .05);
+  --shadow-2: 0 6px 20px rgb(12 31 51 / .10);
+  --shadow-3: 0 18px 48px rgb(12 31 51 / .18);
+}
+
+@layer base {
+  html { scroll-padding-top: 120px; -webkit-text-size-adjust: 100%; }
+  body {
+    @apply bg-bg text-text font-sans text-[15px] leading-normal antialiased tabular-nums overflow-x-hidden;
+  }
+  h1, h2, h3, h4 { @apply text-ink font-semibold; }
+  a { @apply text-link no-underline hover:underline; }
+  :focus-visible { outline: 2px solid var(--color-focus); outline-offset: 2px; }
+  ::selection { background: var(--color-tint-teal-2); color: var(--color-ink); }
+}
+
+/* The SVG icon style used across the app */
+@utility ic {
+  width: 18px; height: 18px; flex: none;
+  fill: none; stroke: currentColor; stroke-width: 1.75;
+  stroke-linecap: round; stroke-linejoin: round;
+}
