@@ -1,4 +1,4 @@
-import {useRef, useState, type FormEvent} from 'react'
+import {useRef, useState, type SyntheticEvent} from 'react'
 import {Link} from 'react-router-dom'
 import photo from '@/assets/login-hospital.jpg'
 import {BrandMark} from '@/components/layout/BrandMark.tsx'
@@ -35,7 +35,7 @@ export default function Login() {
     const idRef = useRef<HTMLInputElement>(null)
     const passRef = useRef<HTMLInputElement>(null)
 
-    const onSubmit = (e: FormEvent<HTMLFormElement>) => {
+    const onSubmit = (e: SyntheticEvent<HTMLFormElement>) => {
         e.preventDefault()
         const next: Errors = {}
         if (!id.trim()) next.id = 'Enter your staff ID or hospital email.'

@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState, type ChangeEvent } from 'react'
+import { useEffect, useRef, useState, type SyntheticEvent } from 'react'
 import { useNavigate } from 'react-router-dom'
 import {IconButton} from "@/components/ui/IconButton.tsx";
 import {Icon} from "@/components/icons/Icon.tsx";
@@ -25,7 +25,7 @@ export function Topbar({ collapsed, onToggleCollapse, onOpenMobile }: Props) {
         return () => document.removeEventListener('keydown', onKey)
     }, [])
 
-    const onSubmit = (e: ChangeEvent) => {
+    const onSubmit = (e: SyntheticEvent) => {
         e.preventDefault()
         const term = q.trim()
         navigate(term ? `/patients?q=${encodeURIComponent(term)}` : '/patients')

@@ -4,6 +4,7 @@ import Overview from "@/pages/Overview.tsx";
 import Login from "@/pages/Login.tsx";
 import {PageHeader} from "@/components/ui/PageHeader.tsx";
 import {AppShell} from "@/components/layout/AppShell.tsx";
+import Patients from "@/pages/Patients.tsx";
 
 const stub = (crumb: string, title: string, subtitle: string) => (
     <PageHeader crumb={crumb} title={title} subtitle={subtitle}/>
@@ -14,8 +15,7 @@ export default function App() {
         <Routes>
             <Route element={<AppShell/>}>
                 <Route index element={<Overview/>}/>
-                <Route path="patients"
-                       element={stub('Inpatients', 'Inpatients', '286 patients admitted across 13 wards · 5 critical · 3 ready for discharge')}/>
+                <Route path="patients" element={<Patients/>}/>
                 <Route path="patient" element={stub('Patient record', 'Marisol Ventura', 'Ward 3A · Bed 07')}/>
                 <Route path="appointments"
                        element={stub('OPD appointments', 'OPD appointments', 'Outpatient clinics, block B level 1 · 30-minute slots')}/>

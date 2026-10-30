@@ -1,139 +1,302 @@
 @import "tailwindcss";
 
 @theme {
-  /* Start from a clean palette: no default Tailwind colours */
-  --color-*: initial;
-  --color-white: #fff;
-  --color-black: #000;
-  --color-transparent: transparent;
-  --color-current: currentColor;
+    /* Start from a clean palette: no default Tailwind colours */
+    --color-*: initial;
+    --color-white: #fff;
+    --color-black: #000;
+    --color-transparent: transparent;
+    --color-current: currentColor;
 
-  /* Brand */
-  --color-navy: #0b2a4a;
-  --color-navy-700: #123a63;
-  --color-navy-card: #0e2f52;
-  --color-mint: #5ee0c1;
-  --color-teal: #08705f;        /* teal text on light surfaces */
-  --color-teal-500: #14a88f;    /* teal fills and lines */
-  --color-teal-line: #86d4c5;
-  --color-coral: #e5533d;
-  --color-coral-ink: #b3361f;
-  --color-coral-line: #f2b9ae;
-  --color-amber: #eea935;
-  --color-amber-ink: #855400;
-  --color-amber-line: #e8c47c;
-  --color-sky: #2f74c0;
-  --color-sky-ink: #1d5796;
+    /* Brand */
+    --color-navy: #0b2a4a;
+    --color-navy-700: #123a63;
+    --color-navy-card: #0e2f52;
+    --color-mint: #5ee0c1;
+    --color-teal: #08705f;        /* teal text on light surfaces */
+    --color-teal-500: #14a88f;    /* teal fills and lines */
+    --color-teal-line: #86d4c5;
+    --color-coral: #e5533d;
+    --color-coral-ink: #b3361f;
+    --color-coral-line: #f2b9ae;
+    --color-amber: #eea935;
+    --color-amber-ink: #855400;
+    --color-amber-line: #e8c47c;
+    --color-sky: #2f74c0;
+    --color-sky-ink: #1d5796;
 
-  /* Surfaces */
-  --color-bg: #f1f4f8;
-  --color-surface: #ffffff;
-  --color-surface-2: #f7f9fb;
-  --color-surface-3: #edf1f6;
-  --color-line: #dde4ec;
-  --color-line-2: #c5d0dc;
+    /* Surfaces */
+    --color-bg: #f1f4f8;
+    --color-surface: #ffffff;
+    --color-surface-2: #f7f9fb;
+    --color-surface-3: #edf1f6;
+    --color-line: #dde4ec;
+    --color-line-2: #c5d0dc;
 
-  /* Text */
-  --color-ink: #0c1f33;
-  --color-text: #2a3d52;
-  --color-muted: #56687b;
-  --color-muted-2: #8a9aac;
+    /* Text */
+    --color-ink: #0c1f33;
+    --color-text: #2a3d52;
+    --color-muted: #56687b;
+    --color-muted-2: #8a9aac;
 
-  /* Tints */
-  --color-tint-navy: #e6edf6;
-  --color-tint-navy-2: #d8e3f0;
-  --color-tint-teal: #e0f4ef;
-  --color-tint-teal-2: #bfe8dd;
-  --color-tint-coral: #fdece8;
-  --color-tint-amber: #fdf3de;
-  --color-tint-sky: #e7f0fb;
-  --color-tint-sky-2: #f3f8fd;
+    /* Tints */
+    --color-tint-navy: #e6edf6;
+    --color-tint-navy-2: #d8e3f0;
+    --color-tint-teal: #e0f4ef;
+    --color-tint-teal-2: #bfe8dd;
+    --color-tint-coral: #fdece8;
+    --color-tint-amber: #fdf3de;
+    --color-tint-sky: #e7f0fb;
+    --color-tint-sky-2: #f3f8fd;
 
-  /* Roles */
-  --color-primary: #0b2a4a;
-  --color-primary-hover: #123a63;
-  --color-on-primary: #ffffff;
-  --color-chart-1: #0b2a4a;
-  --color-chart-2: #14a88f;
-  --color-link: #1d5796;
-  --color-focus: #2f74c0;
-  --color-census: #e8eef5;
-  --color-sidebar: #0b2a4a;
+    /* Roles */
+    --color-primary: #0b2a4a;
+    --color-primary-hover: #123a63;
+    --color-on-primary: #ffffff;
+    --color-chart-1: #0b2a4a;
+    --color-chart-2: #14a88f;
+    --color-link: #1d5796;
+    --color-focus: #2f74c0;
+    --color-census: #e8eef5;
+    --color-sidebar: #0b2a4a;
 
-  /* Fonts */
-  --font-sans: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-  --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    /* Fonts */
+    --font-sans: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
 
-  /* Radius and shadows */
-  --radius-DEFAULT: 6px;
-  --radius-lg: 8px;
-  --shadow-1: 0 1px 2px rgb(12 31 51 / .05);
-  --shadow-2: 0 6px 20px rgb(12 31 51 / .10);
-  --shadow-3: 0 18px 48px rgb(12 31 51 / .18);
+    /* Radius and shadows */
+    --radius-DEFAULT: 6px;
+    --radius-lg: 8px;
+    --shadow-1: 0 1px 2px rgb(12 31 51 / .05);
+    --shadow-2: 0 6px 20px rgb(12 31 51 / .10);
+    --shadow-3: 0 18px 48px rgb(12 31 51 / .18);
 }
 
 /* Applies only on desktop (lg+) when an ancestor has data-collapsed="true" */
 @custom-variant rail {
-  @media (width >= 64rem) {
-    &:where([data-collapsed="true"] *) {
-      @slot;
+    @media (width >= 64rem) {
+        &:where([data-collapsed="true"] *) {
+            @slot;
+        }
     }
-  }
 }
 
 @layer base {
-  html { scroll-padding-top: 120px; -webkit-text-size-adjust: 100%; }
-  body {
-    @apply bg-bg text-text font-sans text-[15px] leading-normal antialiased tabular-nums overflow-x-hidden;
-  }
-  h1, h2, h3, h4 { @apply text-ink font-semibold; }
-  a { @apply text-link no-underline hover:underline; }
-  :focus-visible { outline: 2px solid var(--color-focus); outline-offset: 2px; }
-  ::selection { background: var(--color-tint-teal-2); color: var(--color-ink); }
+    html {
+        scroll-padding-top: 120px;
+        -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+        @apply bg-bg text-text font-sans text-[15px] leading-normal antialiased tabular-nums overflow-x-hidden;
+    }
+
+    h1, h2, h3, h4 {
+        @apply text-ink font-semibold;
+    }
+
+    a {
+        @apply text-link no-underline hover:underline;
+    }
+
+    :focus-visible {
+        outline: 2px solid var(--color-focus);
+        outline-offset: 2px;
+    }
+
+    ::selection {
+        background: var(--color-tint-teal-2);
+        color: var(--color-ink);
+    }
 }
 
 /* The SVG icon style used across the app */
 @utility ic {
-  width: 18px; height: 18px; flex: none;
-  fill: none; stroke: currentColor; stroke-width: 1.75;
-  stroke-linecap: round; stroke-linejoin: round;
+    width: 18px;
+    height: 18px;
+    flex: none;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.75;
+    stroke-linecap: round;
+    stroke-linejoin: round;
 }
 /* Animations for Drawer and Modal */
 @theme {
-  --animate-drawer-in: drawer-in 0.28s cubic-bezier(0.2, 0.7, 0.2, 1);
-  --animate-modal-in: modal-in 0.2s cubic-bezier(0.2, 0.7, 0.2, 1);
-  --animate-flash: flash 1.4s cubic-bezier(0.2, 0.7, 0.2, 1);
+    --animate-drawer-in: drawer-in 0.28s cubic-bezier(0.2, 0.7, 0.2, 1);
+    --animate-modal-in: modal-in 0.2s cubic-bezier(0.2, 0.7, 0.2, 1);
+    --animate-flash: flash 1.4s cubic-bezier(0.2, 0.7, 0.2, 1);
 
-  @keyframes drawer-in { from { transform: translateX(100%); } }
-  @keyframes modal-in { from { opacity: 0; transform: translateY(-16px); } }
-  @keyframes flash {
-    0%, 40% { box-shadow: 0 0 0 3px var(--color-teal-500); }
-    100% { box-shadow: 0 0 0 0 transparent; }
-  }
+    @keyframes drawer-in {
+        from {
+            transform: translateX(100%);
+        }
+    }
+    @keyframes modal-in {
+        from {
+            opacity: 0;
+            transform: translateY(-16px);
+        }
+    }
+    @keyframes flash {
+        0%, 40% {
+            box-shadow: 0 0 0 3px var(--color-teal-500);
+        }
+        100% {
+            box-shadow: 0 0 0 0 transparent;
+        }
+    }
 }
 
 @layer base {
-  @media (prefers-reduced-motion: reduce) {
-    *, ::before, ::after {
-      animation: none !important;
-      transition: none !important;
-      scroll-behavior: auto !important;
+    @media (prefers-reduced-motion: reduce) {
+        *, ::before, ::after {
+            animation: none !important;
+            transition: none !important;
+            scroll-behavior: auto !important;
+        }
     }
-  }
 }
 
 /* The clinical data table, used by <DataTable> */
 @layer components {
-  .clinical-table { @apply w-full border-collapse text-[13.5px] text-text; }
-  .clinical-table :is(th, td) { @apply border-b border-line px-3 py-2.5 text-left align-middle; }
-  .clinical-table :is(th, td):first-child { @apply pl-[18px]; }
-  .clinical-table :is(th, td):last-child { @apply pr-[18px]; }
-  .clinical-table .num { @apply text-right; }
-  .clinical-table thead th {
-    @apply whitespace-nowrap bg-surface-2 py-[9px] font-mono text-[10.5px] font-semibold uppercase leading-snug tracking-[.08em] text-muted;
-  }
-  .clinical-table tbody tr:last-child > * { border-bottom-width: 0; }
-  .clinical-table tbody tr:hover > * { @apply bg-surface-2; }
-  .clinical-table tr.is-critical > :first-child { box-shadow: inset 3px 0 0 var(--color-coral); }
-  .clinical-table tr.is-new > * { @apply bg-tint-teal; }
+    .clinical-table {
+        @apply w-full border-collapse text-[13.5px] text-text;
+    }
+
+    .clinical-table :is(th, td) {
+        @apply border-b border-line px-3 py-2.5 text-left align-middle;
+    }
+
+    .clinical-table :is(th, td):first-child {
+        @apply pl-[18px];
+    }
+
+    .clinical-table :is(th, td):last-child {
+        @apply pr-[18px];
+    }
+
+    .clinical-table .num {
+        @apply text-right;
+    }
+
+    .clinical-table thead th {
+        @apply whitespace-nowrap bg-surface-2 py-[9px] font-mono text-[10.5px] font-semibold uppercase leading-snug tracking-[.08em] text-muted;
+    }
+
+    .clinical-table tbody tr:last-child > * {
+        border-bottom-width: 0;
+    }
+
+    .clinical-table tbody tr:hover > * {
+        @apply bg-surface-2;
+    }
+
+    .clinical-table tr.is-critical > :first-child {
+        box-shadow: inset 3px 0 0 var(--color-coral);
+    }
+
+    .clinical-table tr.is-new > * {
+        @apply bg-tint-teal;
+    }
+}
+
+/* Inpatients table: patient cell never wraps; below md each row becomes a small card */
+@layer components {
+    .patients-table [data-col='patient'] {
+        white-space: nowrap;
+    }
+
+    @media (max-width: 767.98px) {
+        .patients-table.clinical-table,
+        .patients-table.clinical-table tbody {
+            display: block;
+        }
+
+        .patients-table.clinical-table thead {
+            display: block;
+            border-bottom: 1px solid var(--color-line);
+            background: var(--color-surface-2);
+        }
+
+        .patients-table.clinical-table thead tr {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 6px 16px;
+            padding: 9px 16px;
+        }
+
+        .patients-table.clinical-table thead tr::before {
+            content: 'Sort';
+            font: 600 10px var(--font-mono);
+            text-transform: uppercase;
+            letter-spacing: .1em;
+            color: var(--color-muted-2);
+        }
+
+        .patients-table.clinical-table thead th {
+            display: block;
+            padding: 0;
+            border: 0;
+            background: none;
+        }
+
+        .patients-table.clinical-table tbody tr {
+            display: grid;
+            grid-template-columns: auto auto minmax(0, 1fr) auto;
+            gap: 8px 14px;
+            padding: 12px 16px;
+            border-bottom: 1px solid var(--color-line);
+        }
+
+        .patients-table.clinical-table tbody tr:last-child {
+            border-bottom: 0;
+        }
+
+        .patients-table.clinical-table tbody tr.is-critical {
+            box-shadow: inset 3px 0 0 var(--color-coral);
+        }
+
+        .patients-table.clinical-table tbody tr.is-new {
+            background: var(--color-tint-teal);
+        }
+
+        .patients-table.clinical-table tbody tr > td {
+            padding: 0;
+            border: 0;
+            box-shadow: none;
+            background: none;
+
+            &[data-col='patient'] {
+                grid-column: 1 / 4;
+                grid-row: 1;
+            }
+
+            &[data-col='status'] {
+                grid-column: 4;
+                grid-row: 1;
+                align-self: start;
+            }
+
+            &[data-col='age'] {
+                grid-column: 1;
+                grid-row: 2;
+                align-self: center;
+                padding-left: 44px;
+            }
+
+            &[data-col='bed'] {
+                grid-column: 2 / 4;
+                grid-row: 2;
+                align-self: center;
+            }
+
+            &[data-col='news'] {
+                grid-column: 4;
+                grid-row: 2;
+                justify-self: end;
+            }
+        }
+    }
 }
