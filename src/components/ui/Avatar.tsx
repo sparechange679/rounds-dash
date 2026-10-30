@@ -8,6 +8,9 @@ const tints = {
     sky: 'bg-[#dbe9f9] text-[#1c5390]',
     slate: 'bg-[#e3e8ee] text-[#3a4c60]',
 }
+
+export type AvatarTint = keyof typeof tints
+
 const sizes = {
     sm: 'size-[30px] rounded-md text-[11px]',
     md: 'size-[34px] rounded-[7px] text-xs',

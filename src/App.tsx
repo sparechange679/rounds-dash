@@ -1,5 +1,7 @@
 import {Route, Routes} from 'react-router-dom'
 import KitPreview from "@/pages/KitPreview.tsx";
+import Overview from "@/pages/Overview.tsx";
+import Login from "@/pages/Login.tsx";
 import {PageHeader} from "@/components/ui/PageHeader.tsx";
 import {AppShell} from "@/components/layout/AppShell.tsx";
 
@@ -11,8 +13,7 @@ export default function App() {
     return (
         <Routes>
             <Route element={<AppShell/>}>
-                <Route index
-                       element={stub('Overview', 'Hospital overview', 'Thursday 24 September · Day shift 07:00–19:00 · Bed meeting at 10:00, Operations Centre')}/>
+                <Route index element={<Overview/>}/>
                 <Route path="patients"
                        element={stub('Inpatients', 'Inpatients', '286 patients admitted across 13 wards · 5 critical · 3 ready for discharge')}/>
                 <Route path="patient" element={stub('Patient record', 'Marisol Ventura', 'Ward 3A · Bed 07')}/>
@@ -24,7 +25,7 @@ export default function App() {
                        element={stub('Staff roster', 'Staff roster', 'Doctors and nurses · week of 21–27 September')}/>
                 <Route path="kit" element={<KitPreview/>}/>
             </Route>
-            <Route path="/login" element={<p className="p-8">Login page comes in step 4.</p>}/>
+            <Route path="/login" element={<Login/>}/>
         </Routes>
     )
 }

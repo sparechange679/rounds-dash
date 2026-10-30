@@ -12,18 +12,22 @@ type FieldProps = {
     error?: string
     hint?: ReactNode
     optional?: boolean
+    labelAction?: ReactNode
     className?: string
     children: ReactNode
 }
 
 /** Label plus control plus error text. The control should use the same id as `htmlFor`. */
-export function Field({label, htmlFor, error, hint, optional, className, children}: FieldProps) {
+export function Field({label, htmlFor, error, hint, optional, labelAction, className, children}: FieldProps) {
     return (
         <div className={className}>
-            <label htmlFor={htmlFor} className="mb-1.5 block text-[12.5px] font-semibold text-ink">
-                {label}
-                {optional && <span className="ml-1 text-[11.5px] font-normal text-muted">optional</span>}
-            </label>
+            <div className="mb-1.5 flex items-baseline justify-between gap-3">
+                <label htmlFor={htmlFor} className="block text-[12.5px] font-semibold text-ink">
+                    {label}
+                    {optional && <span className="ml-1 text-[11.5px] font-normal text-muted">optional</span>}
+                </label>
+                {labelAction}
+            </div>
             {children}
             {hint && !error && <p className="mt-1 text-xs text-muted">{hint}</p>}
             {error && <p id={`${htmlFor}-error`} className="mt-1 text-[13px] text-coral-ink">{error}</p>}
