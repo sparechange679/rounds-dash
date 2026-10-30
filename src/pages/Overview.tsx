@@ -1,10 +1,10 @@
 import {PageHeader} from '@/components/ui/PageHeader.tsx'
 import {ButtonLink} from '@/components/ui/Button.tsx'
-import {Panel, PanelBody, PanelHead} from '@/components/ui/Panel.tsx'
-import {EmptyState} from '@/components/ui/EmptyState.tsx'
 import {Icon} from '@/components/icons/Icon.tsx'
 import {KpiRow} from '@/components/overview/KpiRow.tsx'
+import {WardChartPanel} from '@/components/overview/WardChartPanel.tsx'
 import {AlertsPanel} from '@/components/overview/AlertsPanel.tsx'
+import {FlowChartPanel} from '@/components/overview/FlowChartPanel.tsx'
 import {EdPanel} from '@/components/overview/EdPanel.tsx'
 import {OpdPreview} from '@/components/overview/OpdPreview.tsx'
 import {StaffOnDuty} from '@/components/overview/StaffOnDuty.tsx'
@@ -32,20 +32,12 @@ export default function Overview() {
                 <KpiRow/>
 
                 <div className="grid gap-4 xl:grid-cols-12">
-                    {/* TEMP: replaced by <WardChartPanel/> in message 2 */}
-                    <Panel className="xl:col-span-8">
-                        <PanelHead title="Bed occupancy by ward"/>
-                        <PanelBody><EmptyState icon="activity">Ward chart comes next.</EmptyState></PanelBody>
-                    </Panel>
+                    <WardChartPanel className="xl:col-span-8"/>
                     <AlertsPanel className="xl:col-span-4"/>
                 </div>
 
                 <div className="grid gap-4 xl:grid-cols-12">
-                    {/* TEMP: replaced by <FlowChartPanel/> in message 2 */}
-                    <Panel className="xl:col-span-8">
-                        <PanelHead title="Patient flow"/>
-                        <PanelBody><EmptyState icon="activity">Flow chart comes next.</EmptyState></PanelBody>
-                    </Panel>
+                    <FlowChartPanel className="xl:col-span-8"/>
                     <EdPanel className="xl:col-span-4"/>
                 </div>
 
