@@ -16,7 +16,7 @@ const sizes = {
 
 type Style = { variant?: keyof typeof variants; size?: keyof typeof sizes; block?: boolean; className?: string }
 
-export function buttonClass({variant = 'primary', size = 'md', block, className}: Style = {}) {
+function buttonClass({variant = 'primary', size = 'md', block, className}: Style = {}) {
     return cn(
         'inline-flex items-center justify-center whitespace-nowrap border font-medium transition-colors',
         'hover:no-underline disabled:pointer-events-none disabled:opacity-60 [&>.ic]:size-4',
