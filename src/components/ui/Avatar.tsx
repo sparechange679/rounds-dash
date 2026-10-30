@@ -1,4 +1,4 @@
-import {cn} from '../../lib/cn'
+import {cn} from '@/lib/cn.ts'
 
 const tints = {
     navy: 'bg-[#dfe8f3] text-[#0b2a4a]',

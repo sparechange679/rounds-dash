@@ -1,5 +1,5 @@
-import {census} from '../../data/census'
-import {cn} from '../../lib/cn'
+import {census} from '@/data/census.ts'
+import {cn} from '@/lib/cn.ts'
 
 export function CensusBar() {
     return (

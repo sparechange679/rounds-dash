@@ -1,10 +1,10 @@
 import {useState} from 'react'
 import {Link} from 'react-router-dom'
-import {Icon} from '../icons/Icon.tsx'
-import {IconButton} from '../ui/IconButton.tsx'
-import {notifications} from '../../data/notifications'
-import {useDismiss} from '../../hooks/useDismiss'
-import {cn} from '../../lib/cn'
+import {notifications} from "@/data/notifications.ts";
+import {useDismiss} from "@/hooks/useDismiss.ts";
+import {IconButton} from "@/components/ui/IconButton.tsx";
+import {Icon} from "@/components/icons/Icon.tsx";
+import {cn} from "@/lib/cn.ts";
 
 const tones = {
     coral: 'bg-tint-coral text-coral-ink',

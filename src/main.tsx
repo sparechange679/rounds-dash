@@ -1,13 +1,12 @@
-import {StrictMode} from 'react'
 import {createRoot} from 'react-dom/client'
 import {BrowserRouter} from 'react-router-dom'
-import './index.css'
-import App from './App'
+import {Announcer} from "@/components/ui/Announcer.tsx";
+import App from "@/App.tsx";
 
 createRoot(document.getElementById('root')!).render(
-    <StrictMode>
-        <BrowserRouter>
+    <BrowserRouter>
+        <Announcer>
             <App/>
-        </BrowserRouter>
-    </StrictMode>,
+        </Announcer>
+    </BrowserRouter>,
 )

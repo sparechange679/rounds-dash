@@ -1,5 +1,5 @@
 import type { ButtonHTMLAttributes } from 'react'
-import { cn } from '../../lib/cn'
+import { cn } from '@/lib/cn.ts'
 
 type Props = ButtonHTMLAttributes<HTMLButtonElement> & { dark?: boolean }
 

@@ -1,8 +1,8 @@
 import {useCallback, useEffect, useState} from 'react'
 import {Outlet} from 'react-router-dom'
-import {CensusBar} from './CensusBar'
-import {Sidebar} from './Sidebar'
-import {Topbar} from './Topbar'
+import {Sidebar} from "@/components/layout/Sidebar.tsx";
+import {Topbar} from "@/components/layout/Topbar.tsx";
+import {CensusBar} from "@/components/layout/CensusBar.tsx";
 
 export function AppShell() {
     const [collapsed, setCollapsed] = useState(() => {

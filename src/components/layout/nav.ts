@@ -1,4 +1,4 @@
-import type {IconName} from '../icons/Icon.tsx'
+import type {IconName} from "@/components/icons/Icon.tsx";
 
 export type NavItem = { to: string; label: string; icon: IconName; count?: string }
 

@@ -1,9 +1,9 @@
-import { useEffect, useRef, useState, type FormEvent } from 'react'
+import { useEffect, useRef, useState, type ChangeEvent } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { Icon } from '../icons/Icon.tsx'
-import { IconButton } from '../ui/IconButton.tsx'
-import { NotificationsMenu } from './NotificationsMenu'
-import { UserMenu } from './UserMenu'
+import {IconButton} from "@/components/ui/IconButton.tsx";
+import {Icon} from "@/components/icons/Icon.tsx";
+import {NotificationsMenu} from "@/components/layout/NotificationsMenu.tsx";
+import {UserMenu} from "@/components/layout/UserMenu.tsx";
 
 type Props = { collapsed: boolean; onToggleCollapse: () => void; onOpenMobile: () => void }
 
@@ -25,7 +25,7 @@ export function Topbar({ collapsed, onToggleCollapse, onOpenMobile }: Props) {
         return () => document.removeEventListener('keydown', onKey)
     }, [])
 
-    const onSubmit = (e: FormEvent) => {
+    const onSubmit = (e: ChangeEvent) => {
         e.preventDefault()
         const term = q.trim()
         navigate(term ? `/patients?q=${encodeURIComponent(term)}` : '/patients')

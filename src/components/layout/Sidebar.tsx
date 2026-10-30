@@ -1,11 +1,11 @@
 import {useEffect} from 'react'
 import {Link, NavLink, useLocation} from 'react-router-dom'
-import {Icon} from '../icons/Icon.tsx'
-import {Avatar} from '../ui/Avatar.tsx'
-import {IconButton} from '../ui/IconButton.tsx'
-import {cn} from '../../lib/cn'
-import {BrandMark} from './BrandMark'
-import {navGroups} from './nav'
+import {cn} from "@/lib/cn.ts";
+import {BrandMark} from "@/components/layout/BrandMark.tsx";
+import {IconButton} from "@/components/ui/IconButton.tsx";
+import {Icon} from "@/components/icons/Icon.tsx";
+import {navGroups} from "@/components/layout/nav.ts";
+import {Avatar} from "@/components/ui/Avatar.tsx";
 
 type Props = { collapsed: boolean; mobileOpen: boolean; onCloseMobile: () => void }
 

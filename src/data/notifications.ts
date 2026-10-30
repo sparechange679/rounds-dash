@@ -1,4 +1,4 @@
-import type {IconName} from "../components/icons/Icon.tsx";
+import type {IconName} from "@/components/icons/Icon.tsx";
 
 export type AppNotification = {
     id: number

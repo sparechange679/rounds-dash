@@ -1,6 +1,7 @@
 import {Route, Routes} from 'react-router-dom'
-import {AppShell} from './components/layout/AppShell'
-import {PageHeader} from './components/ui/PageHeader'
+import KitPreview from "@/pages/KitPreview.tsx";
+import {PageHeader} from "@/components/ui/PageHeader.tsx";
+import {AppShell} from "@/components/layout/AppShell.tsx";
 
 const stub = (crumb: string, title: string, subtitle: string) => (
     <PageHeader crumb={crumb} title={title} subtitle={subtitle}/>
@@ -21,6 +22,7 @@ export default function App() {
                        element={stub('Beds & wards', 'Beds & wards', 'Live bed state for 340 beds in 13 wards')}/>
                 <Route path="staff"
                        element={stub('Staff roster', 'Staff roster', 'Doctors and nurses · week of 21–27 September')}/>
+                <Route path="kit" element={<KitPreview/>}/>
             </Route>
             <Route path="/login" element={<p className="p-8">Login page comes in step 4.</p>}/>
         </Routes>

@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { Icon, type IconName } from '../icons/Icon.tsx'
-import { Avatar } from '../ui/Avatar.tsx'
-import { useDismiss } from '../../hooks/useDismiss'
+import {Icon, type IconName} from "@/components/icons/Icon.tsx";
+import {useDismiss} from "@/hooks/useDismiss.ts";
+import {Avatar} from "@/components/ui/Avatar.tsx";
 
 const items: { to: string; label: string; icon: IconName }[] = [
     { to: '/staff', label: 'My shifts', icon: 'calendar' },
